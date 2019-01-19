@@ -1,0 +1,50 @@
+/* Your custom styles */
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination{
+    justify-content: baseline!important;
+}
+
+.form-control{
+    padding: 0px!important;
+}
+
+.form-control.form-control-sm.mdb-select.initialized{
+    display: none;
+}
+
+.odometer {
+    font-size: 50px;
+}
+.imageClickable  {
+     height: 510px;
+}
+
+.canvasBought{
+    border: 2px white solid;
+}
+
+.margin-top {
+    margin-top: 25px;
+}
+
+.popover{
+    width: 525px;
+}
+
+#sendRegisterForm{
+    margin-top: 25px;
+}
+
+#sendRegisterForm .fa{
+    color: #f06292!important;
+}
+.form-control {
+    color: white!important;
+}
+.container-form{
+    margin-top: 35px;
+}
+
+.md-form label {
+    margin-bottom: 7px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>IUT Clicker</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/mdb.min.css"/>
+</head>
+<body>
+
+    <div class="row align-content-center">
+        <div class="col-lg-4">
+        <!--Nb de Belettes-->    
+            <div class="card text-center" style="width: 22rem;">
+                <div class="card-header success-color white-text" id="generator">
+                    Nombre de Générateur :
+                </div>
+                <div class="card-header success-color white-text" id="generatorception">
+                    Nombre de Générateur de générateur :
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title" id="nbUnitBox"></h3>
+                    <p class="card-text">Nombre de belette que vous disposez actuellement</p>
+                </div>
+                <div class="card-footer text-muted success-color white-text">
+                    <h4 id="generatorSpeed">0B/S</h4>
+                </div>
+                <div class="card-footer text-muted success-color white-text">
+                    <h4 id="generatorceptionSpeed">0G/S</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <!--Nb de Belettes-->    
+            <img src="./images/testBelette.jpg" onclick="addUnit()"/>
+        </div>
+        <div class="col-lg-4">
+            <!--Générateur de belette a acheté-->    
+            <div id="table" class="table-responsive">
+                <table class="table table-bordered table-responsive table-striped text-center">
+                    <tr>
+                        <td class="pt-3-half">Belette Gen V1</td>
+                        <td class="pt-3-half">1B/s</td>
+                        <td class="pt-3-half">25B</td>
+                        <td>
+                            <span><button type="button" class="btn btn-danger btn-rounded btn-sm my-0" typeElement="generator" onclick="buySomething(this)">Buy</button></span>
+                        </td>
+                    </tr>
+                    <!-- This is our clonable table line -->
+                    <tr>
+                        <td class="pt-3-half">Belette Genception V1</td>
+                        <td class="pt-3-half">2,15B/s</td>
+                        <td class="pt-3-half">50B</td>
+                        <td>
+                            <span><button type="button" class="btn btn-danger btn-rounded btn-sm my-0" typeElement="generatorsception" onclick="buyGeneratorspection()">Buy</button></span>
+                        </td>
+                    </tr>
+                    <!-- This is our clonable table line -->
+                </table>
+            </div>
+            <button class="badge-danger btn" onclick="save()">SAVE</button>
+            <button class="badge-danger btn" onclick="load()">LOAD</button>
+        </div>
+
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/myScript.js"></script>
+</body>
+</html>
